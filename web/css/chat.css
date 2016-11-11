@@ -1,0 +1,83 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.chat{
+	margin: 0 auto;
+	width: 65%;
+	height: 600px; 
+}
+
+.chat-window {
+	width: 80%;
+	height:100%;
+	float: left;
+	background-color: white;
+}
+.self-info {
+	height: 70px;
+	font-size: 16px;
+	font-weight: bolder;
+	border: 1px solid #B3B4B6;
+	background-color: #F7F5EC;
+}
+.self-avatar {
+    background: url(/image/avatar.jpeg) 0px 0 no-repeat;
+    width: 46px;
+    height: 46px;
+    background-size: contain;
+    float: left;
+    margin: 5px 0px 0px 10px;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+.self-nick {
+	padding: 7px 0px 0px 60px;
+}
+.chat-record {
+	height: 380px;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	/*background-color: blue;*/
+}
+.edit-area {
+	height: 94px;
+}
+.form-control{
+	border-radius: 0px;
+}
+.operate-area {
+	height: 56px;
+	background-color: #F7F5EC;
+	line-height: 56px;
+	padding-left: 460px;
+    border: 1px solid #CCCCCC;
+    border-top: 0px;
+}
+.contact-info {
+	float: left;
+	width: 20%;
+	height:100%;
+	border:1px solid #CCCCCC;
+	border-left: 0px;
+}
+.notice {
+	width: 100%;
+	height: 30%;
+	border-bottom:1px solid #CCCCCC;
+}
+.contact-list {
+	width: 100%;
+	height: 70%;
+}
+.chat-record ul{
+	margin: 0px;
+	padding: 0px;
+}
+.chat-record ul li{
+    list-style: none;
+    list-style: none;
+    padding-left: 15px;
+    height: 30px;
+    line-height: 30px;
+}
