@@ -7,10 +7,9 @@
 		</div>
 		<div class="chat-record">
 			<ul id="record-list">
-				<!-- <li>11221</li>
-				<li>dfsdfsdfd</li> -->
 			</ul>
 		</div>
+		<div class="mid-bar"></div>
 		<div class="edit-area">
 			<textarea class="form-control" rows="4"></textarea>
 		</div>
