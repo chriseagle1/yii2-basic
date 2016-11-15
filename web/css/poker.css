@@ -1,0 +1,41 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.wrap {
+	margin: 0 auto;
+	width: 90%;
+	background-color: #F7F5EC;
+}
+.poker-list{
+    width: 90px;
+    height: 140px;
+    background-size: contain;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: -65px;
+}
+.first-poker{
+	margin-left: 0px;
+}
+.left-list {
+	width: 50%;
+	height: 400px;
+	background-color: yellow;
+	float: left;
+}
+.right-list {
+	width: 50%;
+	height: 400px;
+	background-color: blue;
+	float: right;
+}
+.self-list {
+	height: 150px;
+	background-color: #CCCCCC;
+}
+.clear-float{
+	clear: both;
+}
