@@ -20,18 +20,18 @@
 }
 .left-list {
 	width: 50%;
-	height: 400px;
+	height: 350px;
 	background-color: yellow;
 	float: left;
 }
 .right-list {
 	width: 50%;
-	height: 400px;
+	height: 350px;
 	background-color: blue;
 	float: right;
 }
 .self-list {
-	height: 150px;
+	height: 200px;
 	background-color: #CCCCCC;
 }
 .clear-float{
