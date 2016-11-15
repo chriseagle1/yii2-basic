@@ -14,11 +14,9 @@
     background-size: contain;
     background-position: 0px 0px;
     background-repeat: no-repeat;
-    float: left;
-    margin-left: -65px;
+    position: absolute;
 }
 .first-poker{
-	margin-left: 0px;
 }
 .left-list {
 	width: 50%;
@@ -38,4 +36,7 @@
 }
 .clear-float{
 	clear: both;
+}
+.poker-set{
+	height: 140px;
 }

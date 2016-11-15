@@ -9,7 +9,7 @@
 	<div class="wrap">
 		<div class="poker-set">
 			<?php foreach ($all_poker as $key => $value) { ?>
-				<div id="<?=$value?>" class="poker-list <?php if ($key == 0) { echo 'first-poker';}?>" style="background-image: url(/image/poker_pics/<?=$value?>.JPG)"></div>
+				<div id="<?=$value?>" class="poker-list <?php if ($key == 0) { echo 'first-poker';}?>" style="background-image: url(/image/poker_pics/<?=$value?>.JPG);left:<?=($key*25+80);?>px"></div>
 			<?php }?>
 		</div>
 		<div class="clear-float"></div>
@@ -26,4 +26,6 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/poker.js"></script>
 </html>
