@@ -33,9 +33,9 @@ class ChatController extends Controller
     public function actionIndex()
     {
         $this->layout = 'chat-main';
-        \yii::$app->view->registerCssFile('/css/chat.css', ['depends'=>  'app\assets\AppAsset']);
-        \yii::$app->view->registerJsFile('/js/template.js', ['depends'=>  'app\assets\AppAsset']);
-        \yii::$app->view->registerJsFile('/js/websocket.js', ['depends'=>  'app\assets\AppAsset']);
+        $this->view->registerCssFile('/css/chat.css', ['depends'=>  'app\assets\AppAsset']);
+        $this->view->registerJsFile('/js/template.js', ['depends'=>  'app\assets\AppAsset']);
+        $this->view->registerJsFile('/js/websocket.js', ['depends'=>  'app\assets\AppAsset']);
         
         return $this->render('index');
     }

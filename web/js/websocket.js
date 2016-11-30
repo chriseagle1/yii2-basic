@@ -20,10 +20,20 @@ $(document).ready(function(){
   		  var input = $('.form-control');
   		  var inputVal = input.val();
   		  input.val('');
+        if (inputVal !== '') {
+            var chatRender = template.compile(source);
         
-        var chatRender = template.compile(source);
-  		  
-        $('#record-list').append(chatRender({tmplData: inputVal}));
-        $('.chat-record').scrollTop($('.chat-record')[0].scrollHeight);
+            $('#record-list').append(chatRender({tmplData: inputVal}));
+            $('.chat-record').scrollTop($('.chat-record')[0].scrollHeight);
+        } else {
+            alert('发送内容不能为空');
+        }
   	});
+    $('.edit-area').on('keydown', '', function(event) {
+        /* Act on the event */
+        if (event.keyCode == 13) {
+          event.preventDefault();
+          $('#send').click();
+        };
+    });
 });
