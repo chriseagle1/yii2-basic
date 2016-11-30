@@ -126,4 +126,9 @@ class SiteController extends Controller
     public function actionSay($message = 'hello') {
 	   return $this->render('say', ['message' => $message]);
     }
+
+    public function actionTrangle() {
+        $this->layout = false;
+        return $this->render('trangle');    
+    }
 }

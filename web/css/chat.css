@@ -77,8 +77,8 @@
 .chat-record ul li{
     list-style: none;
     padding-left: 15px;
-    height: 35px;
-    line-height: 35px;
+    line-height: 25px;
+    min-height: 35px;
 }
 .mid-bar {
 	height: 10px;
@@ -88,7 +88,6 @@
 	border-bottom: 0px;
 }
 .self-send {
-	text-align: right;
 	margin-right: 15px;
 	margin-top: 15px;
 }
@@ -102,5 +101,20 @@
     border: 1px solid white;
 }
 .chat-content {
-	padding-right: 45px;
+    background-color: #F8E2CB;
+    padding: 5px 15px;
+    white-space: normal;
+    word-break: break-all;
+    float: right;
+    max-width: 90%;
+    border-radius: 5px;
+}
+
+.trangle{
+	width: 0px;
+	height: 0px;
+    border: 6px solid transparent;
+    border-left: 6px solid #F8E2CB;
+    float: right;
+    margin-top: 11px;
 }
