@@ -1,12 +1,15 @@
 /**
  * 
  */
-// <li class="self-send">
-//   <div class="chat-avatar"></div>
-//   <div class="trangle"></div>
-//   <div class="chat-content">' + inputVal + '</div>
-//   <div style="clear:both;"></div>
-// </li>
+
+var source = '<li class="self-send">'
++    '<div class="chat-avatar"></div>'
++    '<div class="trangle"></div>'
++    '<div class="chat-content">{{tmplData}}</div>'
++    '<div style="clear:both;"></div>'
++ '</li>';
+
+
 $(document).ready(function(){
   	$('.operate-area').on('click', '#close', function(event) {
   		  event.preventDefault();
@@ -17,8 +20,10 @@ $(document).ready(function(){
   		  var input = $('.form-control');
   		  var inputVal = input.val();
   		  input.val('');
-        var chatHtml = '<li class="self-send"><div class="chat-avatar"></div><div class="trangle"></div><div class="chat-content">' + inputVal + '</div><div style="clear:both;"></div></li>';
-  		  $('#record-list').append(chatHtml);
+        
+        var chatRender = template.compile(source);
+  		  
+        $('#record-list').append(chatRender({tmplData: inputVal}));
         $('.chat-record').scrollTop($('.chat-record')[0].scrollHeight);
   	});
 });
