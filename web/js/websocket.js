@@ -1,7 +1,12 @@
 /**
  * 
  */
-
+// <li class="self-send">
+//   <div class="chat-avatar"></div>
+//   <div class="trangle"></div>
+//   <div class="chat-content">' + inputVal + '</div>
+//   <div style="clear:both;"></div>
+// </li>
 $(document).ready(function(){
   	$('.operate-area').on('click', '#close', function(event) {
   		  event.preventDefault();
@@ -15,6 +20,5 @@ $(document).ready(function(){
         var chatHtml = '<li class="self-send"><div class="chat-avatar"></div><div class="trangle"></div><div class="chat-content">' + inputVal + '</div><div style="clear:both;"></div></li>';
   		  $('#record-list').append(chatHtml);
         $('.chat-record').scrollTop($('.chat-record')[0].scrollHeight);
-        // $('#record-list').children().last()[0].scrollIntoView();
   	});
 });
