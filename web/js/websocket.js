@@ -9,7 +9,6 @@ var source = '<li class="self-send">'
 +    '<div style="clear:both;"></div>'
 + '</li>';
 
-
 $(document).ready(function(){
   	$('.operate-area').on('click', '#close', function(event) {
   		  event.preventDefault();
