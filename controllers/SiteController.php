@@ -8,6 +8,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\EntryForm;
 
 class SiteController extends Controller
 {
@@ -130,5 +131,15 @@ class SiteController extends Controller
     public function actionTrangle() {
         $this->layout = false;
         return $this->render('trangle');    
+    }
+    
+    public function actionEntry() {
+        $model = new EntryForm();
+        
+        if ($model->load(\yii::$app->request->post()) && $model->validate()) {
+            return $this->render('entry-confirm', ['model' => $model]);
+        } else {
+            return $this->render('entry', ['model' => $model]);
+        }
     }
 }
