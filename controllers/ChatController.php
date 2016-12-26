@@ -8,6 +8,34 @@ use yii\web\Controller;
 class ChatController extends Controller
 {
     /**
+     * 1  
+     * (non-PHPdoc)
+     * @see \yii\base\Object::init()
+     */
+    public function init() {
+    }
+    
+    /**
+     * 2
+     * @inheritdoc
+     */
+    public function actions()
+    {
+        return [
+        ];
+    }
+    
+    /**
+     * 3
+     * (non-PHPdoc)
+     * @see \yii\web\Controller::beforeAction()
+     */
+    public function beforeAction($action) {
+        return parent::beforeAction($action);
+    }
+    
+    /**
+     * 4
      * @inheritdoc
      */
     public function behaviors()
@@ -17,15 +45,19 @@ class ChatController extends Controller
     }
 
     /**
-     * @inheritdoc
+     * 6
+     * (non-PHPdoc)
+     * @see \yii\base\Controller::afterAction()
      */
-    public function actions()
+    public function afterAction($action, $result)
     {
-        return [
-        ];
+         $result = parent::afterAction($action, $result);
+         // your custom code here
+         return $result;
     }
-
+    
     /**
+     * 5
      * Displays homepage.
      *
      * @return string
