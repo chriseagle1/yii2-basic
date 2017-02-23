@@ -6,7 +6,7 @@ use yii\data\Pagination;
 use app\models\Country;
 
 class CountryController extends Controller {
-    public function actionIndex(){
+    public function actionList(){
         $query = Country::find();
         
         $pagination = new Pagination(

@@ -10,8 +10,17 @@ class EntryForm extends Model {
     
     public function rules() {
         return [
-            [['name', 'email'], 'required'],
+            [['name', 'email', 'password'], 'required', 'on' => 'register'],
+            [['name', 'password'], 'required', 'on' => 'login'],
+            ['password', 'password'],
             ['email', 'email']    
+        ];
+    }
+    
+    public function attributeLabels() {
+        return [
+            'name' => '姓名',
+            'email' => '邮箱'
         ];
     }
 }

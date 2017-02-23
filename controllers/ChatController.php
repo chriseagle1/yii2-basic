@@ -22,6 +22,7 @@ class ChatController extends Controller
     public function actions()
     {
         return [
+            'error' => '\app\common\ErrorAction'
         ];
     }
     
