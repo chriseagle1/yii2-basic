@@ -60,11 +60,7 @@ class WS {
 						echo "have shaked\n";
                         //解码，输出
                         $decodeContent = $this->decode($buffer, $socketId);
-                        /*$cycleLen = strlen($buffer);
-                        for($i = 0; $i < $cycleLen; $i++) {
-                            echo ord($buffer[$i]) . "\n";
-                        }*/
-                        // echo ord($buffer[1]) . "\n";
+                        
                         echo $decodeContent . "\n";
                         $output = $this->encode($decodeContent);
                         socket_write($this->accept[$socketId]['socket'], $output, strlen($output));                
